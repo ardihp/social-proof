@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.back{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.back .top{
+    width: 35%;
+}
+
+.back .bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+/* Container */
+.container{
+    margin: 50px 100px;
+}
+
+.cont-atas{
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    width: 50%;
+    padding: 30px;
+}
+
+.content h3{
+    color: hsl(300, 43%, 22%);
+    font-size: 45px;
+    width: 80%;
+}
+
+.content p{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: hsl(303, 10%, 53%);
+}
+
+.rating{
+    width: 50%;
+    padding: 30px;
+}
+
+.rating .rate{
+    background: hsl(300, 24%, 96%);
+    margin: 20px 0;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+}
+
+.rate span{
+    font-size: 12px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding: 0 20px;
+    position: relative;
+    top: 5px;
+}
+
+.rate:nth-child(2){
+    position: relative;
+    left: 50px;
+}
+
+.rate:nth-child(3){
+    position: relative;
+    left: 100px;
+}
+
+/* Opinion */
+.opinion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px 40px;
+}
+
+.op{
+    background: hsl(300, 43%, 22%);
+    padding: 30px 20px;
+    margin: 0 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.opinion .desc{
+    display: flex;
+}
+
+.desc img{
+    width: 15%;
+    border-radius: 30px;
+}
+
+.desc .desc-text{
+    padding: 0 20px;
+}
+
+.desc-text .name{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.desc-text .verified{
+    color: hsl(333, 80%, 67%);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.op .text{
+    padding: 30px 0 0;
+    font-size: 14px;
+}
+
+.op:nth-child(2){
+    position: relative;
+    top: 20px;
+}
+
+.op:nth-child(3){
+    position: relative;
+    top: 40px;
+}
+
+@media screen and (max-width:1150px){
+    .container{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .cont-atas{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .content{
+        width: 90%;
+        margin: 0;
+    }
+
+    .content h3{
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .rating{
+        width: 90%;
+        padding: 0 auto;
+        margin-top: -30px;
+    }
+
+    .rating .rate{
+        width: 97%;
+        display: block;
+    }
+
+    .rate:nth-child(2), .rate:nth-child(3){
+        position: relative;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .opinion{
+        display: block;
+        width: 97%;
+    }
+
+    .rating .rate{
+        width: 95%;
+    }
+
+    .rating{
+        padding: 20px 15px;
+    }
+}
